@@ -1,0 +1,735 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AIoptimix | AI Systems for High-Speed Growth</title>
+    <meta
+      name="description"
+      content="AIoptimix builds automations, AI agents, chatbots, custom AI apps, and AI audits that help businesses scale faster with less manual work."
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Sora:wght@500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              obsidian: "#06080F",
+              steel: "#131928",
+              mist: "#99A6C2",
+              ice: "#DCE6FF",
+              cyanGlow: "#D6FF57",
+              limeSpark: "#D6FF57",
+              ember: "#FF9B66"
+            },
+            fontFamily: {
+              sans: ["Plus Jakarta Sans", "sans-serif"],
+              display: ["Sora", "sans-serif"]
+            },
+            boxShadow: {
+              aura: "0 20px 60px rgba(59, 230, 213, 0.18)",
+              card: "0 16px 40px rgba(8, 15, 30, 0.4)"
+            }
+          }
+        }
+      };
+    </script>
+
+    <style>
+      html {
+        scroll-behavior: smooth;
+      }
+
+      body {
+        background:
+          radial-gradient(circle at 12% 8%, rgba(59, 230, 213, 0.14), transparent 35%),
+          radial-gradient(circle at 88% 16%, rgba(214, 255, 87, 0.12), transparent 28%),
+          radial-gradient(circle at 50% 84%, rgba(255, 155, 102, 0.08), transparent 32%),
+          #06080f;
+      }
+
+      .grid-noise {
+        background-image: linear-gradient(rgba(153, 166, 194, 0.08) 1px, transparent 1px),
+          linear-gradient(90deg, rgba(153, 166, 194, 0.08) 1px, transparent 1px);
+        background-size: 48px 48px;
+        mask-image: radial-gradient(circle at center, black 42%, transparent 100%);
+      }
+
+      .reveal {
+        opacity: 0;
+        transform: translateY(24px);
+        transition: opacity 700ms ease, transform 700ms ease;
+      }
+
+      .reveal.in {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    </style>
+  </head>
+
+  <body class="font-sans text-ice antialiased">
+    <div class="fixed inset-0 pointer-events-none grid-noise"></div>
+
+    <header class="sticky top-0 z-50 border-b border-white/10 bg-obsidian/85 backdrop-blur-xl">
+      <div class="mx-auto flex max-w-7xl items-center justify-between px-6 py-4 lg:px-10">
+        <a href="#" class="font-display text-xl font-bold tracking-tight">AIoptimix</a>
+        <nav class="hidden items-center gap-8 text-sm text-ice/80 md:flex">
+          <a href="#services" class="transition hover:text-cyanGlow">Services</a>
+          <a href="#process" class="transition hover:text-cyanGlow">Process</a>
+          <a href="#systems" class="transition hover:text-cyanGlow">Systems</a>
+          <a href="#team" class="transition hover:text-cyanGlow">About Us</a>
+        </nav>
+        <a
+          href="#cta"
+          class="rounded-full border border-cyanGlow/60 bg-cyanGlow/10 px-4 py-2 text-sm font-semibold text-cyanGlow transition hover:bg-cyanGlow/20"
+        >
+          Book Strategy Call
+        </a>
+      </div>
+    </header>
+
+    <main>
+      <section class="relative overflow-hidden px-6 pb-20 pt-16 lg:px-10 lg:pb-20 lg:pt-20">
+        <div class="mx-auto grid max-w-7xl gap-14 lg:grid-cols-[1.1fr_0.9fr] lg:items-end">
+          <div class="reveal space-y-8">
+            <span class="inline-flex items-center rounded-full border border-limeSpark/45 bg-limeSpark/10 px-4 py-2 text-xs font-bold uppercase tracking-[0.18em] text-limeSpark">
+              Your Software, Web, and AI Partner
+            </span>
+
+            <h1 class="font-display text-2xl font-bold leading-tight text-white sm:text-5xl lg:text-5xl">
+              From manual work to automated AI workflows.</br>We make the shift simple.
+            </h1>
+
+            <p class="max-w-2xl text-base leading-relaxed text-ice/80 sm:text-lg">
+              AIoptimix helps companies scale with automations, AI agents, AI chatbots,
+              custom AI applications, and AI audits. Let AI do all the repetitive work!
+            </p>
+
+            <div class="rounded-2xl border border-limeSpark/35 bg-limeSpark/10 p-4 sm:p-5">
+              <div id="quote-slider" class="relative min-h-[95px] sm:min-h-[70px]">
+                <figure class="quote-slide transition-opacity duration-500">
+                  <blockquote class="text-base font-semibold leading-relaxed sm:text-lg">
+                    "There will be two types of companies: those who are great at AI, and everybody else. And the 'everybody else' is going to fail." <span class="text-ice/50">- Mark Cuban</span>
+                  </blockquote>
+                </figure>
+                <figure class="quote-slide absolute inset-0 opacity-0 transition-opacity duration-500">
+                  <blockquote class="text-base font-semibold leading-relaxed sm:text-lg">
+                    "Artificial Intelligence is the best investment for small businesses. Time is money." <span class="text-ice/50">- Kevin O'Leary</span>
+                  </blockquote>
+                </figure>
+                <figure class="quote-slide absolute inset-0 opacity-0 transition-opacity duration-500">
+                  <blockquote class="text-base font-semibold leading-relaxed sm:text-lg">
+                    "AI has the potential to automate work activities that absorb 60 to 70 percent of employees' time today." <span class="text-ice/50">- McKinsey & Company</span>
+                  </blockquote>
+                </figure>
+                <figure class="quote-slide absolute inset-0 opacity-0 transition-opacity duration-500">
+                  <blockquote class="text-base font-semibold leading-relaxed sm:text-lg">
+                    "The companies that will win are the ones who use AI to do more with less." <span class="text-ice/50">- Naval Ravikant</span>
+                  </blockquote>
+                </figure>
+                <figure class="quote-slide absolute inset-0 opacity-0 transition-opacity duration-500">
+                  <blockquote class="text-base font-semibold leading-relaxed sm:text-lg">
+                    "Ignoring AI is like refusing to use email in the 90s. It's not a choice anymore; it's a requirement for survival." <span class="text-ice/50">- Gary Vaynerchuk</span>
+                  </blockquote>
+                </figure>
+                <figure class="quote-slide absolute inset-0 opacity-0 transition-opacity duration-500">
+                  <blockquote class="text-base font-semibold leading-relaxed sm:text-lg">
+                    "AI will change 100% of jobs, 100% of industries, and 100% of professions." <span class="text-ice/50">- Ginni Rometty (Former CEO of IBM)</span>
+                  </blockquote>
+                </figure>
+              </div>
+              <div id="quote-dots" class="mt-1 flex items-center gap-2">
+                <span class="h-1.5 w-6 rounded-full bg-limeSpark"></span>
+                <span class="h-1.5 w-1.5 rounded-full bg-limeSpark/40"></span>
+                <span class="h-1.5 w-1.5 rounded-full bg-limeSpark/40"></span>
+                <span class="h-1.5 w-1.5 rounded-full bg-limeSpark/40"></span>
+                <span class="h-1.5 w-1.5 rounded-full bg-limeSpark/40"></span>
+                <span class="h-1.5 w-1.5 rounded-full bg-limeSpark/40"></span>
+              </div>
+            </div>
+
+            <div class="flex flex-wrap items-center gap-4">
+              <a
+                href="#cta"
+                class="rounded-full bg-cyanGlow px-6 py-3 text-sm font-bold text-obsidian transition hover:-translate-y-0.5 hover:shadow-aura"
+              >
+                Get Your AI Roadmap
+              </a>
+              <a
+                href="#systems"
+                class="rounded-full border border-white/20 px-6 py-3 text-sm font-semibold text-ice/90 transition hover:border-cyanGlow/60 hover:text-cyanGlow"
+              >
+                See Use Cases
+              </a>
+            </div>
+          </div>
+
+          <div class="reveal lg:justify-self-end">
+            <div class="rounded-3xl border border-white/10 bg-steel/75 p-6 shadow-card backdrop-blur-lg sm:p-8">
+              <p class="text-sm font-semibold uppercase tracking-[0.16em] text-mist">We're a Team Built for Massive Output</p>
+              <div class="mt-6 grid grid-cols-2 gap-4">
+                <div class="rounded-2xl border border-white/10 bg-white/[0.04] p-4">
+                  <p class="text-3xl font-extrabold text-cyanGlow">40+</p>
+                  <p class="mt-1 text-xs uppercase tracking-wider text-mist">AI Agents Active</p>
+                </div>
+                <div class="rounded-2xl border border-white/10 bg-white/[0.04] p-4">
+                  <p class="text-3xl font-extrabold text-limeSpark">5</p>
+                  <p class="mt-1 text-xs uppercase tracking-wider text-mist">Remote AI Pilots</p>
+                </div>
+                <div class="rounded-2xl border border-white/10 bg-white/[0.04] p-4">
+                  <p class="text-3xl font-extrabold text-ember">14</p>
+                  <p class="mt-1 text-xs uppercase tracking-wider text-mist">Onsite Operators</p>
+                </div>
+                <div class="rounded-2xl border border-white/10 bg-white/[0.04] p-4">
+                  <p class="text-3xl font-extrabold text-white">2</p>
+                  <p class="mt-1 text-xs uppercase tracking-wider text-mist">Co-Founders</p>
+                </div>
+              </div>
+              <div class="mt-6 rounded-2xl border border-limeSpark/35 bg-limeSpark/10 p-4">
+                <p class="mt-1 text-2xl font-extrabold text-limeSpark">One AI Agent = 20 People (and zero coffee breaks)</p>
+                <p class="mt-2 text-sm leading-relaxed text-ice/75">
+                  Yes, we reduced 100+ roles over time. Not because people were not valued, but because refusing to adapt slows down client results.
+                </p>
+                <p class="mt-2 text-sm leading-relaxed text-ice/75">
+                  We choose performance over comfort, speed over tradition, and outcomes over excuses.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="px-6 py-16 lg:px-10">
+        <div class="mx-auto max-w-7xl">
+          <div class="reveal max-w-3xl">
+            <p class="text-sm font-semibold uppercase tracking-[0.14em] text-cyanGlow">Why This Shift Matters</p>
+            <h2 class="mt-4 font-display text-3xl font-bold text-white sm:text-4xl">People doubted the web. They doubted email. Now they doubt AI adaptation.</h2>
+          </div>
+
+          <div class="mt-10 grid gap-5 md:grid-cols-3">
+            <article class="reveal rounded-2xl border border-white/10 bg-steel/70 p-6">
+              <p class="text-sm font-semibold uppercase tracking-wider text-limeSpark">Web Presence Still Dominates</p>
+              <p class="mt-4 leading-relaxed text-ice/85">Ten years ago, people said company websites would die. They remain the foundation of digital trust and discovery.</p>
+            </article>
+            <article class="reveal rounded-2xl border border-white/10 bg-steel/70 p-6">
+              <p class="text-sm font-semibold uppercase tracking-wider text-limeSpark">Email Still Runs Business</p>
+              <p class="mt-4 leading-relaxed text-ice/85">People said email would disappear. It is still the dominant communication channel in business.</p>
+            </article>
+            <article class="reveal rounded-2xl border border-white/10 bg-steel/70 p-6">
+              <p class="text-sm font-semibold uppercase tracking-wider text-limeSpark">AI Multiplies Team Output</p>
+              <p class="mt-4 leading-relaxed text-ice/85">AI does not remove ambition. It multiplies output, increases speed, and lets teams deliver more without endless headcount growth.</p>
+            </article>
+          </div>
+
+          <div class="reveal mt-8 max-w-5xl rounded-3xl border border-limeSpark/30 bg-gradient-to-r from-limeSpark/14 via-limeSpark/6 to-transparent p-6 sm:p-8">
+            <p class="text-xl font-semibold leading-relaxed text-limeSpark sm:text-2xl">
+              It looks complex from the outside. With the right partner, it becomes seamless infrastructure you fully control.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="stats" class="px-6 py-16 lg:px-10">
+        <div class="mx-auto max-w-7xl">
+          <div class="reveal max-w-3xl">
+            <p class="text-sm font-semibold uppercase tracking-[0.14em] text-cyanGlow">AI Adoption Stats</p>
+            <h2 class="mt-4 font-display text-3xl font-bold text-white sm:text-4xl">
+              AI adoption is no longer experimental. It’s driving real results.
+            </h2>
+          </div>
+
+          <div class="mt-10 grid gap-6 lg:grid-cols-2">
+            <article class="reveal rounded-3xl border border-limeSpark/25 bg-limeSpark/8 p-7">
+              <p class="text-xs font-semibold uppercase tracking-[0.16em] text-limeSpark">The Reward</p>
+              <div class="mt-5 grid gap-4 sm:grid-cols-2">
+                <div class="rounded-2xl border border-white/10 bg-white/[0.04] p-4">
+                  <p class="text-3xl font-extrabold text-limeSpark">91%</p>
+                  <p class="mt-1 text-sm text-ice/80">SMBs using AI report revenue increase.</p>
+                </div>
+                <div class="rounded-2xl border border-white/10 bg-white/[0.04] p-4">
+                  <p class="text-3xl font-extrabold text-limeSpark">86%</p>
+                  <p class="mt-1 text-sm text-ice/80">SMBs say AI improved profit margins.</p>
+                </div>
+                <div class="rounded-2xl border border-white/10 bg-white/[0.04] p-4">
+                  <p class="text-3xl font-extrabold text-limeSpark">3-15%</p>
+                  <p class="mt-1 text-sm text-ice/80">Revenue uplift in marketing/sales with AI.</p>
+                </div>
+                <div class="rounded-2xl border border-white/10 bg-white/[0.04] p-4">
+                  <p class="text-3xl font-extrabold text-limeSpark">10-20%</p>
+                  <p class="mt-1 text-sm text-ice/80">Sales ROI uplift from AI investment.</p>
+                </div>
+              </div>
+            </article>
+
+            <article class="reveal rounded-3xl border border-white/10 bg-steel/75 p-7">
+              <p class="text-xs font-semibold uppercase tracking-[0.16em] text-ember">The Risk of Waiting</p>
+              <div class="mt-5 grid gap-4 sm:grid-cols-2">
+                <div class="rounded-2xl border border-white/10 bg-white/[0.04] p-4">
+                  <p class="text-3xl font-extrabold text-ember">58%</p>
+                  <p class="mt-1 text-sm text-ice/80">U.S. small businesses now use GenAI (2025).</p>
+                </div>
+                <div class="rounded-2xl border border-white/10 bg-white/[0.04] p-4">
+                  <p class="text-3xl font-extrabold text-ember">77%</p>
+                  <p class="mt-1 text-sm text-ice/80">AI-using SMBs say AI limits would hurt growth.</p>
+                </div>
+                <div class="rounded-2xl border border-white/10 bg-white/[0.04] p-4">
+                  <p class="text-3xl font-extrabold text-ember">60-70%</p>
+                  <p class="mt-1 text-sm text-ice/80">Work activities are potentially automatable with GenAI.</p>
+                </div>
+                <div class="rounded-2xl border border-white/10 bg-white/[0.04] p-4">
+                  <p class="text-3xl font-extrabold text-ember">2030</p>
+                  <p class="mt-1 text-sm text-ice/80">CIO view: all IT work will involve AI augmentation.</p>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <div class="reveal mt-6 rounded-2xl border border-white/10 bg-white/[0.03] p-4 text-xs leading-relaxed text-ice/65">
+            Sources: Salesforce Small Business Trends (Dec 2024), U.S. Chamber of Commerce small business tech report (Aug 2025), McKinsey AI research, Gartner CIO survey (Oct 2025).
+          </div>
+        </div>
+      </section>
+
+      <section id="services" class="px-6 py-16 lg:px-10">
+        <div class="mx-auto max-w-7xl">
+          <div class="reveal max-w-3xl">
+            <p class="text-sm font-semibold uppercase tracking-[0.14em] text-cyanGlow">What We Build</p>
+            <h2 class="mt-4 font-display text-3xl font-bold text-white sm:text-4xl">Systems designed to remove bottlenecks and drive results.</h2>
+          </div>
+
+          <div class="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+            <div class="reveal rounded-2xl border border-white/10 bg-white/[0.03] p-6">
+              <div class="flex items-center gap-3">
+                <svg class="h-5 w-5 shrink-0 text-limeSpark" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+                  <path d="M4 20h16M7 16v-4m5 4V8m5 8V5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                <p class="font-semibold text-white">Lead Generation Engines</p>
+              </div>
+              <p class="mt-2 text-base leading-relaxed text-ice/80">Generate more qualified leads with AI-powered pipelines and follow-up automation.</p>
+            </div>
+            <div class="reveal rounded-2xl border border-white/10 bg-white/[0.03] p-6">
+              <div class="flex items-center gap-3">
+                <svg class="h-5 w-5 shrink-0 text-limeSpark" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+                  <path d="M8 10h8M8 14h5M5 6h14a1 1 0 0 1 1 1v9a1 1 0 0 1-1 1h-6l-4 3v-3H5a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1Z" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                <p class="font-semibold text-white">Customer Response Systems</p>
+              </div>
+              <p class="mt-2 text-base leading-relaxed text-ice/80">Respond instantly across channels and turn speed into a competitive advantage.</p>
+            </div>
+            <div class="reveal rounded-2xl border border-white/10 bg-white/[0.03] p-6">
+              <div class="flex items-center gap-3">
+                <svg class="h-5 w-5 shrink-0 text-limeSpark" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+                  <path d="M12 8.5a3.5 3.5 0 1 0 0 7 3.5 3.5 0 0 0 0-7Zm0-5.5v2m0 14v2m9-9h-2M5 12H3m15.4 6.4-1.4-1.4M7 7l-1.4-1.4m12.8 0L17 7M7 17l-1.4 1.4" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                <p class="font-semibold text-white">Workflow Automation</p>
+              </div>
+              <p class="mt-2 text-base leading-relaxed text-ice/80">Reduce manual workload by replacing repetitive operations with reliable AI flows.</p>
+            </div>
+            <div class="reveal rounded-2xl border border-white/10 bg-white/[0.03] p-6">
+              <div class="flex items-center gap-3">
+                <svg class="h-5 w-5 shrink-0 text-limeSpark" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+                  <path d="M3 8h18M5 5h14a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1Zm7 7v4m-2-2h4" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                <p class="font-semibold text-white">Cost Optimization</p>
+              </div>
+              <p class="mt-2 text-base leading-relaxed text-ice/80">Lower operational costs while improving output consistency and execution quality.</p>
+            </div>
+            <div class="reveal rounded-2xl border border-white/10 bg-white/[0.03] p-6">
+              <div class="flex items-center gap-3">
+                <svg class="h-5 w-5 shrink-0 text-limeSpark" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+                  <path d="M11 18a7 7 0 1 0 0-14 7 7 0 0 0 0 14Zm10 2-4.35-4.35" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                <p class="font-semibold text-white">AI Audit & Strategy</p>
+              </div>
+              <p class="mt-2 text-base leading-relaxed text-ice/80">Find exactly where time and margin are leaking, then redesign operations around AI.</p>
+            </div>
+            <div class="reveal rounded-2xl border border-white/10 bg-white/[0.03] p-6">
+              <div class="flex items-center gap-3">
+                <svg class="h-5 w-5 shrink-0 text-limeSpark" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+                  <path d="M12 3 4 7.5v9L12 21l8-4.5v-9L12 3Zm0 0v9m0 0 8-4.5M12 12 4 7.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                <p class="font-semibold text-white">Custom AI Applications</p>
+              </div>
+              <p class="mt-2 text-base leading-relaxed text-ice/80">Build AI products tailored to your process, stack, and scale goals.</p>
+            </div>
+            <div class="reveal rounded-2xl border border-white/10 bg-white/[0.03] p-6 sm:col-span-2 lg:col-span-3">
+              <div class="flex items-center gap-3">
+                <svg class="h-5 w-5 shrink-0 text-limeSpark" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+                  <path d="m8 8-4 4 4 4m8-8 4 4-4 4M13 6l-2 12" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                <p class="font-semibold text-white">Websites & Custom Software Development</p>
+              </div>
+              <p class="mt-2 text-base leading-relaxed text-ice/80">
+                We also design and ship high-performance websites and custom software systems in significantly faster timelines by using the leading AI engines in the market.
+              </p>
+            </div>
+          </div>
+
+          <div class="reveal mt-8 max-w-5xl rounded-3xl border border-cyanGlow/30 bg-gradient-to-r from-cyanGlow/12 via-cyanGlow/5 to-transparent p-6 sm:p-8">
+            <p class="text-xl font-semibold leading-relaxed text-cyanGlow sm:text-2xl">
+              With AI integrated into your workflows, your current team can operate at a completely different level, producing more results without growing payroll.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="process" class="px-6 py-16 lg:px-10">
+        <div class="mx-auto max-w-7xl">
+          <div class="reveal max-w-3xl">
+            <p class="text-sm font-semibold uppercase tracking-[0.14em] text-cyanGlow">Our Process</p>
+            <h2 class="mt-4 font-display text-3xl font-bold text-white sm:text-4xl">From brainstorming to execution, we work alongside you every step of the way.</h2>
+          </div>
+
+          <div class="mt-10 grid gap-5 md:grid-cols-2 xl:grid-cols-5">
+            <article class="reveal rounded-2xl border border-white/10 bg-steel/70 p-6">
+              <p class="text-xs font-bold uppercase tracking-[0.16em] text-limeSpark">Step 01</p>
+              <h3 class="mt-3 font-display text-xl font-semibold text-white">Requirement Discovery</h3>
+              <p class="mt-3 text-sm leading-relaxed text-ice/80">
+                You share business goals, constraints, priorities, and current bottlenecks.
+              </p>
+            </article>
+            <article class="reveal rounded-2xl border border-white/10 bg-steel/70 p-6">
+              <p class="text-xs font-bold uppercase tracking-[0.16em] text-limeSpark">Step 02</p>
+              <h3 class="mt-3 font-display text-xl font-semibold text-white">AI Audit</h3>
+              <p class="mt-3 text-sm leading-relaxed text-ice/80">
+                We audit operations and identify where AI can create immediate speed and output gains.
+              </p>
+            </article>
+            <article class="reveal rounded-2xl border border-white/10 bg-steel/70 p-6">
+              <p class="text-xs font-bold uppercase tracking-[0.16em] text-limeSpark">Step 03</p>
+              <h3 class="mt-3 font-display text-xl font-semibold text-white">Tools + Agent Implementation</h3>
+              <p class="mt-3 text-sm leading-relaxed text-ice/80">
+                We recommend the best-fit tools and deploy AI agents and automations into your workflows.
+              </p>
+            </article>
+            <article class="reveal rounded-2xl border border-white/10 bg-steel/70 p-6">
+              <p class="text-xs font-bold uppercase tracking-[0.16em] text-limeSpark">Step 04</p>
+              <h3 class="mt-3 font-display text-xl font-semibold text-white">Custom Build (If Needed)</h3>
+              <p class="mt-3 text-sm leading-relaxed text-ice/80">
+                If ready-made tools are not enough, we build custom AI agents, websites, and software for your company.
+              </p>
+            </article>
+            <article class="reveal rounded-2xl border border-white/10 bg-steel/70 p-6">
+              <p class="text-xs font-bold uppercase tracking-[0.16em] text-limeSpark">Step 05</p>
+              <h3 class="mt-3 font-display text-xl font-semibold text-white">Support + Optimization</h3>
+              <p class="mt-3 text-sm leading-relaxed text-ice/80">
+                We provide ongoing support, maintenance, and optimization to keep performance compounding.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="systems" class="px-6 py-16 lg:px-10">
+        <div class="mx-auto max-w-7xl">
+          <div class="reveal max-w-3xl">
+            <p class="text-sm font-semibold uppercase tracking-[0.14em] text-cyanGlow">Real Systems We've Built</p>
+            <h2 class="mt-4 font-display text-3xl font-bold text-white sm:text-4xl">Production-grade AI infrastructure deployed for real companies.</h2>
+          </div>
+
+          <div class="mt-10 grid gap-6 lg:grid-cols-2">
+            <article class="reveal rounded-3xl border border-white/10 bg-steel/75 p-7">
+              <h3 class="font-display text-2xl font-semibold text-white">Paid Media Execution Systems</h3>
+              <ul class="mt-5 space-y-2 text-base text-ice/85">
+                <li class="flex items-start gap-2"><svg class="mt-0.5 h-4 w-4 shrink-0 text-limeSpark" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M16.704 5.29a1 1 0 010 1.42l-7.2 7.2a1 1 0 01-1.415 0l-3.2-3.2a1 1 0 111.414-1.41l2.493 2.492 6.493-6.493a1 1 0 011.415 0z" clip-rule="evenodd"/></svg><span>Audit and stabilize ad accounts</span></li>
+                <li class="flex items-start gap-2"><svg class="mt-0.5 h-4 w-4 shrink-0 text-limeSpark" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M16.704 5.29a1 1 0 010 1.42l-7.2 7.2a1 1 0 01-1.415 0l-3.2-3.2a1 1 0 111.414-1.41l2.493 2.492 6.493-6.493a1 1 0 011.415 0z" clip-rule="evenodd"/></svg><span>Enforce budget and quality guardrails</span></li>
+                <li class="flex items-start gap-2"><svg class="mt-0.5 h-4 w-4 shrink-0 text-limeSpark" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M16.704 5.29a1 1 0 010 1.42l-7.2 7.2a1 1 0 01-1.415 0l-3.2-3.2a1 1 0 111.414-1.41l2.493 2.492 6.493-6.493a1 1 0 011.415 0z" clip-rule="evenodd"/></svg><span>Track real leads and calls before launch</span></li>
+                <li class="flex items-start gap-2"><svg class="mt-0.5 h-4 w-4 shrink-0 text-limeSpark" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M16.704 5.29a1 1 0 010 1.42l-7.2 7.2a1 1 0 01-1.415 0l-3.2-3.2a1 1 0 111.414-1.41l2.493 2.492 6.493-6.493a1 1 0 011.415 0z" clip-rule="evenodd"/></svg><span>Run daily waste-control monitoring</span></li>
+                <li class="flex items-start gap-2"><svg class="mt-0.5 h-4 w-4 shrink-0 text-limeSpark" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M16.704 5.29a1 1 0 010 1.42l-7.2 7.2a1 1 0 01-1.415 0l-3.2-3.2a1 1 0 111.414-1.41l2.493 2.492 6.493-6.493a1 1 0 011.415 0z" clip-rule="evenodd"/></svg><span>Continuously optimize for qualified CPL</span></li>
+              </ul>
+              <div class="mt-5">
+                <p class="text-xs font-semibold uppercase tracking-[0.14em] text-limeSpark/90">Result</p>
+                <div class="mt-3 flex flex-wrap gap-2">
+                  <span class="rounded-full border border-limeSpark/45 bg-limeSpark/10 px-3 py-1 text-xs font-semibold text-limeSpark">Better Lead Quality</span>
+                  <span class="rounded-full border border-limeSpark/45 bg-limeSpark/10 px-3 py-1 text-xs font-semibold text-limeSpark">Lower Spend Waste</span>
+                  <span class="rounded-full border border-limeSpark/45 bg-limeSpark/10 px-3 py-1 text-xs font-semibold text-limeSpark">Predictable Acquisition</span>
+                </div>
+              </div>
+            </article>
+
+            <article class="reveal rounded-3xl border border-white/10 bg-steel/75 p-7">
+              <h3 class="font-display text-2xl font-semibold text-white">Autonomous Social Media Engines</h3>
+              <ul class="mt-5 space-y-2 text-base text-ice/85">
+                <li class="flex items-start gap-2"><svg class="mt-0.5 h-4 w-4 shrink-0 text-limeSpark" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M16.704 5.29a1 1 0 010 1.42l-7.2 7.2a1 1 0 01-1.415 0l-3.2-3.2a1 1 0 111.414-1.41l2.493 2.492 6.493-6.493a1 1 0 011.415 0z" clip-rule="evenodd"/></svg><span>Analyze business and competitors</span></li>
+                <li class="flex items-start gap-2"><svg class="mt-0.5 h-4 w-4 shrink-0 text-limeSpark" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M16.704 5.29a1 1 0 010 1.42l-7.2 7.2a1 1 0 01-1.415 0l-3.2-3.2a1 1 0 111.414-1.41l2.493 2.492 6.493-6.493a1 1 0 011.415 0z" clip-rule="evenodd"/></svg><span>Extract brand identity automatically</span></li>
+                <li class="flex items-start gap-2"><svg class="mt-0.5 h-4 w-4 shrink-0 text-limeSpark" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M16.704 5.29a1 1 0 010 1.42l-7.2 7.2a1 1 0 01-1.415 0l-3.2-3.2a1 1 0 111.414-1.41l2.493 2.492 6.493-6.493a1 1 0 011.415 0z" clip-rule="evenodd"/></svg><span>Generate monthly captions and visuals</span></li>
+                <li class="flex items-start gap-2"><svg class="mt-0.5 h-4 w-4 shrink-0 text-limeSpark" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M16.704 5.29a1 1 0 010 1.42l-7.2 7.2a1 1 0 01-1.415 0l-3.2-3.2a1 1 0 111.414-1.41l2.493 2.492 6.493-6.493a1 1 0 011.415 0z" clip-rule="evenodd"/></svg><span>Produce on-brand imagery at scale</span></li>
+                <li class="flex items-start gap-2"><svg class="mt-0.5 h-4 w-4 shrink-0 text-limeSpark" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M16.704 5.29a1 1 0 010 1.42l-7.2 7.2a1 1 0 01-1.415 0l-3.2-3.2a1 1 0 111.414-1.41l2.493 2.492 6.493-6.493a1 1 0 011.415 0z" clip-rule="evenodd"/></svg><span>Monitor reviews and flag risks instantly</span></li>
+              </ul>
+              <div class="mt-5">
+                <p class="text-xs font-semibold uppercase tracking-[0.14em] text-limeSpark/90">Result</p>
+                <div class="mt-3 flex flex-wrap gap-2">
+                  <span class="rounded-full border border-limeSpark/45 bg-limeSpark/10 px-3 py-1 text-xs font-semibold text-limeSpark">Consistent Content</span>
+                  <span class="rounded-full border border-limeSpark/45 bg-limeSpark/10 px-3 py-1 text-xs font-semibold text-limeSpark">Stronger Positioning</span>
+                  <span class="rounded-full border border-limeSpark/45 bg-limeSpark/10 px-3 py-1 text-xs font-semibold text-limeSpark">No Manual Posting Grind</span>
+                </div>
+              </div>
+            </article>
+
+            <article class="reveal rounded-3xl border border-white/10 bg-steel/75 p-7">
+              <h3 class="font-display text-2xl font-semibold text-white">Website & SEO Automation Infrastructure</h3>
+              <ul class="mt-5 space-y-2 text-base text-ice/85">
+                <li class="flex items-start gap-2"><svg class="mt-0.5 h-4 w-4 shrink-0 text-limeSpark" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M16.704 5.29a1 1 0 010 1.42l-7.2 7.2a1 1 0 01-1.415 0l-3.2-3.2a1 1 0 111.414-1.41l2.493 2.492 6.493-6.493a1 1 0 011.415 0z" clip-rule="evenodd"/></svg><span>Monitor speed and engagement behavior weekly</span></li>
+                <li class="flex items-start gap-2"><svg class="mt-0.5 h-4 w-4 shrink-0 text-limeSpark" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M16.704 5.29a1 1 0 010 1.42l-7.2 7.2a1 1 0 01-1.415 0l-3.2-3.2a1 1 0 111.414-1.41l2.493 2.492 6.493-6.493a1 1 0 011.415 0z" clip-rule="evenodd"/></svg><span>Track visibility and keyword movement</span></li>
+                <li class="flex items-start gap-2"><svg class="mt-0.5 h-4 w-4 shrink-0 text-limeSpark" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M16.704 5.29a1 1 0 010 1.42l-7.2 7.2a1 1 0 01-1.415 0l-3.2-3.2a1 1 0 111.414-1.41l2.493 2.492 6.493-6.493a1 1 0 011.415 0z" clip-rule="evenodd"/></svg><span>Refresh outdated content automatically</span></li>
+                <li class="flex items-start gap-2"><svg class="mt-0.5 h-4 w-4 shrink-0 text-limeSpark" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M16.704 5.29a1 1 0 010 1.42l-7.2 7.2a1 1 0 01-1.415 0l-3.2-3.2a1 1 0 111.414-1.41l2.493 2.492 6.493-6.493a1 1 0 011.415 0z" clip-rule="evenodd"/></svg><span>Generate SEO-focused content monthly</span></li>
+                <li class="flex items-start gap-2"><svg class="mt-0.5 h-4 w-4 shrink-0 text-limeSpark" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M16.704 5.29a1 1 0 010 1.42l-7.2 7.2a1 1 0 01-1.415 0l-3.2-3.2a1 1 0 111.414-1.41l2.493 2.492 6.493-6.493a1 1 0 011.415 0z" clip-rule="evenodd"/></svg><span>Build location pages and reporting dashboards</span></li>
+              </ul>
+              <div class="mt-5">
+                <p class="text-xs font-semibold uppercase tracking-[0.14em] text-limeSpark/90">Result</p>
+                <div class="mt-3 flex flex-wrap gap-2">
+                  <span class="rounded-full border border-limeSpark/45 bg-limeSpark/10 px-3 py-1 text-xs font-semibold text-limeSpark">Compounding Organic Visibility</span>
+                  <span class="rounded-full border border-limeSpark/45 bg-limeSpark/10 px-3 py-1 text-xs font-semibold text-limeSpark">Ongoing Growth</span>
+                  <span class="rounded-full border border-limeSpark/45 bg-limeSpark/10 px-3 py-1 text-xs font-semibold text-limeSpark">Less Manual Effort</span>
+                </div>
+              </div>
+            </article>
+
+            <article class="reveal rounded-3xl border border-white/10 bg-steel/75 p-7">
+              <h3 class="font-display text-2xl font-semibold text-white">AI Operational Workforce</h3>
+              <ul class="mt-5 space-y-2 text-base text-ice/85">
+                <li class="flex items-start gap-2"><svg class="mt-0.5 h-4 w-4 shrink-0 text-limeSpark" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M16.704 5.29a1 1 0 010 1.42l-7.2 7.2a1 1 0 01-1.415 0l-3.2-3.2a1 1 0 111.414-1.41l2.493 2.492 6.493-6.493a1 1 0 011.415 0z" clip-rule="evenodd"/></svg><span>Answer inbound calls and handle emails</span></li>
+                <li class="flex items-start gap-2"><svg class="mt-0.5 h-4 w-4 shrink-0 text-limeSpark" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M16.704 5.29a1 1 0 010 1.42l-7.2 7.2a1 1 0 01-1.415 0l-3.2-3.2a1 1 0 111.414-1.41l2.493 2.492 6.493-6.493a1 1 0 011.415 0z" clip-rule="evenodd"/></svg><span>Route tasks and update CRMs</span></li>
+                <li class="flex items-start gap-2"><svg class="mt-0.5 h-4 w-4 shrink-0 text-limeSpark" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M16.704 5.29a1 1 0 010 1.42l-7.2 7.2a1 1 0 01-1.415 0l-3.2-3.2a1 1 0 111.414-1.41l2.493 2.492 6.493-6.493a1 1 0 011.415 0z" clip-rule="evenodd"/></svg><span>Notify teams and run outreach</span></li>
+                <li class="flex items-start gap-2"><svg class="mt-0.5 h-4 w-4 shrink-0 text-limeSpark" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M16.704 5.29a1 1 0 010 1.42l-7.2 7.2a1 1 0 01-1.415 0l-3.2-3.2a1 1 0 111.414-1.41l2.493 2.492 6.493-6.493a1 1 0 011.415 0z" clip-rule="evenodd"/></svg><span>Support customer service workflows</span></li>
+                <li class="flex items-start gap-2"><svg class="mt-0.5 h-4 w-4 shrink-0 text-limeSpark" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M16.704 5.29a1 1 0 010 1.42l-7.2 7.2a1 1 0 01-1.415 0l-3.2-3.2a1 1 0 111.414-1.41l2.493 2.492 6.493-6.493a1 1 0 011.415 0z" clip-rule="evenodd"/></svg><span>Operate 24/7 without missed follow-ups</span></li>
+              </ul>
+              <div class="mt-5">
+                <p class="text-xs font-semibold uppercase tracking-[0.14em] text-limeSpark/90">Result</p>
+                <div class="mt-3 flex flex-wrap gap-2">
+                  <span class="rounded-full border border-limeSpark/45 bg-limeSpark/10 px-3 py-1 text-xs font-semibold text-limeSpark">No Delays</span>
+                  <span class="rounded-full border border-limeSpark/45 bg-limeSpark/10 px-3 py-1 text-xs font-semibold text-limeSpark">No Bottlenecks</span>
+                  <span class="rounded-full border border-limeSpark/45 bg-limeSpark/10 px-3 py-1 text-xs font-semibold text-limeSpark">No Dropped Opportunities</span>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="team" class="px-6 py-16 lg:px-10">
+        <div class="mx-auto max-w-7xl">
+          <div class="grid gap-8 lg:grid-cols-2 lg:items-stretch">
+            <div class="reveal rounded-3xl border border-white/10 bg-white/[0.03] p-7 sm:p-8">
+              <p class="mt-4 font-display text-3xl font-bold sm:text-4xl text-limeSpark/90">About Us</p>
+              <p class="mt-4 text-base leading-relaxed text-ice/80">
+                We are <b>Tanner</b> and <b>Naveed</b>, two high school friends from Chicago who started building together long before AI was a buzzword. Ten years ago, we were coding manual HTML websites the old-school way, line by line, learning through trial and error, fueled by curiosity and way too much coffee. Back then, delivering a site took weeks. We were obsessed with figuring things out, breaking things, rebuilding them better, and pushing our limits every single project. That mindset never left.
+              </p>
+              <p class="mt-3 text-base leading-relaxed text-ice/80">
+                When AI began changing the landscape, we did not hesitate. We leaned in completely. What used to take a month now takes an hour. What once required layers of manual effort can now be engineered into intelligent systems. We believe this shift is real, and it is massive. We work hard because we genuinely love technology, automation, and solving complex problems. Today, we build AI infrastructure for companies across the UAE, USA, India, Serbia, Pakistan, the UK, Malaysia, and beyond. We are still those same two friends who love building, just operating at a completely different level.
+              </p>
+            </div>
+
+            <div class="reveal rounded-3xl border border-white/10 bg-white/[0.03] p-6 h-full flex flex-col">
+                <div class="relative">
+                  <div id="about-slider" class="relative overflow-hidden rounded-2xl border border-white/15 bg-steel">
+                    <figure class="about-slide">
+                      <img src="assets/about-us/photo-01.jpg" alt="Tanner and Naveed at the airport" class="aspect-[4/3] w-full object-cover" onerror="this.style.display='none'; this.nextElementSibling.classList.remove('hidden')" />
+                      <div class="hidden aspect-[4/3] w-full items-center justify-center bg-gradient-to-br from-limeSpark/20 via-steel to-steel/70 text-center text-xs font-semibold uppercase tracking-[0.18em] text-limeSpark/90">Add Photo 01</div>
+                      <figcaption class="border-t border-white/10 bg-obsidian/70 px-4 py-3 text-sm text-ice/80">Future Museum, Dubai</figcaption>
+                    </figure>
+                    <figure class="about-slide absolute inset-0 opacity-0">
+                      <img src="assets/about-us/photo-02.jpg" alt="Team at desert outing" class="aspect-[4/3] w-full object-cover" onerror="this.style.display='none'; this.nextElementSibling.classList.remove('hidden')" />
+                      <div class="hidden aspect-[4/3] w-full items-center justify-center bg-gradient-to-br from-limeSpark/20 via-steel to-steel/70 text-center text-xs font-semibold uppercase tracking-[0.18em] text-limeSpark/90">Add Photo 02</div>
+                      <figcaption class="border-t border-white/10 bg-obsidian/70 px-4 py-3 text-sm text-ice/80">Pullman Hotel, UAE</figcaption>
+                    </figure>
+                    <figure class="about-slide absolute inset-0 opacity-0">
+                      <img src="assets/about-us/photo-03.jpg" alt="Tanner and Naveed in green gallery" class="aspect-[4/3] w-full object-cover" onerror="this.style.display='none'; this.nextElementSibling.classList.remove('hidden')" />
+                      <div class="hidden aspect-[4/3] w-full items-center justify-center bg-gradient-to-br from-limeSpark/20 via-steel to-steel/70 text-center text-xs font-semibold uppercase tracking-[0.18em] text-limeSpark/90">Add Photo 03</div>
+                      <figcaption class="border-t border-white/10 bg-obsidian/70 px-4 py-3 text-sm text-ice/80">Burj Khalifa, Dubai</figcaption>
+                    </figure>
+                    <figure class="about-slide absolute inset-0 opacity-0">
+                      <img src="assets/about-us/photo-04.jpg" alt="Team at evening meetup" class="aspect-[4/3] w-full object-cover" onerror="this.style.display='none'; this.nextElementSibling.classList.remove('hidden')" />
+                      <div class="hidden aspect-[4/3] w-full items-center justify-center bg-gradient-to-br from-limeSpark/20 via-steel to-steel/70 text-center text-xs font-semibold uppercase tracking-[0.18em] text-limeSpark/90">Add Photo 04</div>
+                      <figcaption class="border-t border-white/10 bg-obsidian/70 px-4 py-3 text-sm text-ice/80">Faisal Mosque, Pakistan</figcaption>
+                    </figure>
+                    <figure class="about-slide absolute inset-0 opacity-0">
+                      <img src="assets/about-us/photo-05.jpg" alt="Group photo at grand hall" class="aspect-[4/3] w-full object-cover" onerror="this.style.display='none'; this.nextElementSibling.classList.remove('hidden')" />
+                      <div class="hidden aspect-[4/3] w-full items-center justify-center bg-gradient-to-br from-limeSpark/20 via-steel to-steel/70 text-center text-xs font-semibold uppercase tracking-[0.18em] text-limeSpark/90">Add Photo 05</div>
+                      <figcaption class="border-t border-white/10 bg-obsidian/70 px-4 py-3 text-sm text-ice/80">STK Steakhouse, Chicago</figcaption>
+                    </figure>
+                    <figure class="about-slide absolute inset-0 opacity-0">
+                      <img src="assets/about-us/photo-06.jpg" alt="Team with city skyline" class="aspect-[4/3] w-full object-cover" onerror="this.style.display='none'; this.nextElementSibling.classList.remove('hidden')" />
+                      <div class="hidden aspect-[4/3] w-full items-center justify-center bg-gradient-to-br from-limeSpark/20 via-steel to-steel/70 text-center text-xs font-semibold uppercase tracking-[0.18em] text-limeSpark/90">Add Photo 06</div>
+                      <figcaption class="border-t border-white/10 bg-obsidian/70 px-4 py-3 text-sm text-ice/80">Rub' al Khali, Abu Dhabi</figcaption>
+                    </figure>
+                    <figure class="about-slide absolute inset-0 opacity-0">
+                      <img src="assets/about-us/photo-07.jpg" alt="Team at observation deck" class="aspect-[4/3] w-full object-cover" onerror="this.style.display='none'; this.nextElementSibling.classList.remove('hidden')" />
+                      <div class="hidden aspect-[4/3] w-full items-center justify-center bg-gradient-to-br from-limeSpark/20 via-steel to-steel/70 text-center text-xs font-semibold uppercase tracking-[0.18em] text-limeSpark/90">Add Photo 07</div>
+                      <figcaption class="border-t border-white/10 bg-obsidian/70 px-4 py-3 text-sm text-ice/80">Lahore Airport, Pakistan</figcaption>
+                    </figure>
+                  </div>
+
+                  <button id="about-prev" type="button" class="absolute left-3 top-1/2 -translate-y-1/2 rounded-full border border-white/20 bg-obsidian/70 p-2 text-white/80 transition hover:border-limeSpark/70 hover:text-limeSpark" aria-label="Previous photo">
+                    <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m15 18-6-6 6-6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                  </button>
+                  <button id="about-next" type="button" class="absolute right-3 top-1/2 -translate-y-1/2 rounded-full border border-white/20 bg-obsidian/70 p-2 text-white/80 transition hover:border-limeSpark/70 hover:text-limeSpark" aria-label="Next photo">
+                    <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m9 18 6-6-6-6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                  </button>
+                </div>
+                <div id="about-dots" class="mt-3 flex items-center justify-center gap-2">
+                  <span class="h-1.5 w-6 rounded-full bg-limeSpark"></span>
+                  <span class="h-1.5 w-1.5 rounded-full bg-limeSpark/40"></span>
+                  <span class="h-1.5 w-1.5 rounded-full bg-limeSpark/40"></span>
+                  <span class="h-1.5 w-1.5 rounded-full bg-limeSpark/40"></span>
+                  <span class="h-1.5 w-1.5 rounded-full bg-limeSpark/40"></span>
+                  <span class="h-1.5 w-1.5 rounded-full bg-limeSpark/40"></span>
+                  <span class="h-1.5 w-1.5 rounded-full bg-limeSpark/40"></span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="mx-auto max-w-7xl reveal mt-8 rounded-3xl border border-limeSpark/25 bg-limeSpark/8 p-5 sm:p-6">
+            <p class="text-xs font-semibold uppercase tracking-[0.14em] text-limeSpark/90">Impact Snapshot</p>
+            <div class="mt-4 grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
+              <div class="rounded-2xl border border-white/10 bg-white/[0.04] p-4">
+                <p class="text-2xl font-extrabold text-limeSpark">10</p>
+                <p class="mt-1 text-xs uppercase tracking-wider text-ice/75">Years Building</p>
+              </div>
+              <div class="rounded-2xl border border-white/10 bg-white/[0.04] p-4">
+                <p class="text-2xl font-extrabold text-limeSpark">1,000+</p>
+                <p class="mt-1 text-xs uppercase tracking-wider text-ice/75">Clients Served</p>
+              </div>
+              <div class="rounded-2xl border border-white/10 bg-white/[0.04] p-4">
+                <p class="text-2xl font-extrabold text-limeSpark">26+</p>
+                <p class="mt-1 text-xs uppercase tracking-wider text-ice/75">Countries Reached</p>
+              </div>
+              <div class="rounded-2xl border border-white/10 bg-white/[0.04] p-4">
+                <p class="text-2xl font-extrabold text-limeSpark">$14M+</p>
+                <p class="mt-1 text-xs uppercase tracking-wider text-ice/75">Business Impact Created</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="cta" class="px-6 pb-20 pt-8 lg:px-10 lg:pb-24">
+        <div class="mx-auto max-w-6xl rounded-[2rem] border border-cyanGlow/40 bg-gradient-to-r from-cyanGlow/14 via-white/5 to-limeSpark/10 p-8 shadow-aura sm:p-10 lg:p-14">
+          <div class="reveal grid gap-8 lg:grid-cols-[1.2fr_0.8fr] lg:items-center">
+            <div>
+              <p class="text-sm font-semibold uppercase tracking-[0.16em] text-cyanGlow">Ready to Transform?</p>
+              <h2 class="mt-4 font-display text-3xl font-bold leading-tight text-white sm:text-4xl">
+                Build your AI roadmap and increase output across your company.
+              </h2>
+              <p class="mt-4 max-w-2xl text-sm leading-relaxed text-ice/80 sm:text-base">
+                Book an AI Strategy Call and get a practical plan to automate workflows,
+                deploy AI agents, and accelerate execution.
+              </p>
+            </div>
+            <div class="flex flex-col gap-3 lg:items-end">
+              <a
+                href="mailto:hello@aioptimix.com"
+                class="inline-flex w-full items-center justify-center rounded-full bg-cyanGlow px-6 py-3 text-sm font-bold text-obsidian transition hover:-translate-y-0.5 lg:w-auto"
+              >
+                Book AI Strategy Call
+              </a>
+              <a
+                href="#"
+                class="inline-flex w-full items-center justify-center rounded-full border border-white/25 px-6 py-3 text-sm font-semibold text-white transition hover:border-limeSpark/70 hover:text-limeSpark lg:w-auto"
+              >
+                View AI Audit Process
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="border-t border-white/10 px-6 py-8 lg:px-10">
+      <div class="mx-auto flex max-w-7xl flex-col gap-2 text-sm text-ice/70 sm:flex-row sm:items-center sm:justify-between">
+        <p>© <span id="year"></span> AIoptimix. Built for speed and outcomes.</p>
+        <p>Automations. AI Agents. Chatbots. Custom AI Apps. AI Audits.</p>
+      </div>
+    </footer>
+
+    <script>
+      const observer = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add("in");
+            }
+          });
+        },
+        { threshold: 0.12 }
+      );
+
+      document.querySelectorAll(".reveal").forEach((el) => observer.observe(el));
+      document.getElementById("year").textContent = new Date().getFullYear();
+
+      const quoteSlides = Array.from(document.querySelectorAll(".quote-slide"));
+      const quoteDots = Array.from(document.querySelectorAll("#quote-dots span"));
+      let quoteIndex = 0;
+
+      if (quoteSlides.length > 1) {
+        setInterval(() => {
+          quoteSlides[quoteIndex].classList.add("opacity-0");
+          quoteSlides[quoteIndex].classList.remove("opacity-100");
+          quoteDots[quoteIndex].className = "h-1.5 w-1.5 rounded-full bg-limeSpark/40";
+
+          quoteIndex = (quoteIndex + 1) % quoteSlides.length;
+
+          quoteSlides[quoteIndex].classList.remove("opacity-0");
+          quoteSlides[quoteIndex].classList.add("opacity-100");
+          quoteDots[quoteIndex].className = "h-1.5 w-6 rounded-full bg-limeSpark";
+        }, 4500);
+      }
+
+      const aboutSlides = Array.from(document.querySelectorAll(".about-slide"));
+      const aboutDots = Array.from(document.querySelectorAll("#about-dots span"));
+      const aboutPrev = document.getElementById("about-prev");
+      const aboutNext = document.getElementById("about-next");
+      let aboutIndex = 0;
+      let aboutTimer;
+
+      function setAboutSlide(nextIndex) {
+        aboutSlides[aboutIndex].classList.add("opacity-0");
+        aboutSlides[aboutIndex].classList.remove("opacity-100");
+        if (aboutDots[aboutIndex]) {
+          aboutDots[aboutIndex].className = "h-1.5 w-1.5 rounded-full bg-limeSpark/40";
+        }
+
+        aboutIndex = (nextIndex + aboutSlides.length) % aboutSlides.length;
+        aboutSlides[aboutIndex].classList.remove("opacity-0");
+        aboutSlides[aboutIndex].classList.add("opacity-100");
+        if (aboutDots[aboutIndex]) {
+          aboutDots[aboutIndex].className = "h-1.5 w-6 rounded-full bg-limeSpark";
+        }
+      }
+
+      function startAboutSlider() {
+        if (aboutSlides.length <= 1) return;
+        aboutTimer = setInterval(() => setAboutSlide(aboutIndex + 1), 5000);
+      }
+
+      if (aboutSlides.length > 1) {
+        aboutSlides.forEach((slide) => slide.classList.add("transition-opacity", "duration-500"));
+        if (aboutPrev) {
+          aboutPrev.addEventListener("click", () => {
+            clearInterval(aboutTimer);
+            setAboutSlide(aboutIndex - 1);
+            startAboutSlider();
+          });
+        }
+        if (aboutNext) {
+          aboutNext.addEventListener("click", () => {
+            clearInterval(aboutTimer);
+            setAboutSlide(aboutIndex + 1);
+            startAboutSlider();
+          });
+        }
+        startAboutSlider();
+      }
+    </script>
+  </body>
+</html>
